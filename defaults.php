@@ -116,14 +116,41 @@ class OC_Theme {
 		return '';
 	}
 
+	public function getPrivacyPolicyUrl() {
+		try {
+			return \OC::$server->getConfig()->getAppValue('core', 'legal.privacy_policy_url', '');
+		} catch (\Exception $e) {
+			return '';
+		}
+	}
+	
+	public function getImprintUrl() {
+		try {
+			return \OC::$server->getConfig()->getAppValue('core', 'legal.imprint_url', '');
+		} catch (\Exception $e) {
+			return '';
+		}
+	}
+
+	public function getL10n() {
+		return \OC::$server->getL10N('core');
+	}
+	
 	/**
 	 * Returns short version of the footer
 	 * @return string short footer
 	 */
 	public function getShortFooter() {
-		$footer = '© 2017 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$l10n = $this->getL10n();
+		$footer = '© 2018 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
+		if ($this->getImprintUrl() !== '') {
+			$footer .= '<span class="nowrap"> | <a href="' . $this->getImprintUrl() . '" target="_blank">' . $l10n->t('Imprint') . '</a></span>';
+		}
 
+		if ($this->getPrivacyPolicyUrl() !== '') {
+			$footer .= '<span class="nowrap"> | <a href="'. $this->getPrivacyPolicyUrl() .'" target="_blank">'. $l10n->t('Privacy Policy')	 .'</a></span>';
+		}
 		return $footer;
 	}
 
@@ -132,9 +159,16 @@ class OC_Theme {
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '© 2017 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$l10n = $this->getL10n();
+		$footer = '© 2018 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
+		if ($this->getImprintUrl() !== '') {
+			$footer .= '<span class="nowrap"> | <a href="' . $this->getImprintUrl() . '" target="_blank">' . $l10n->t('Imprint') . '</a></span>';
+		}
 
+		if ($this->getPrivacyPolicyUrl() !== '') {
+			$footer .= '<span class="nowrap"> | <a href="'. $this->getPrivacyPolicyUrl() .'" target="_blank">'. $l10n->t('Privacy Policy') .'</a></span>';
+		}
 		return $footer;
 	}
 
