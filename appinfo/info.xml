@@ -10,7 +10,7 @@
 		<theme/>
 	</types>
 	<dependencies>
-		<owncloud min-version="10.1" max-version="10.1" />
+		<owncloud min-version="10.0.9" max-version="10.1" />
 	</dependencies>
 	<namespace>Theme</namespace>
 </info>
