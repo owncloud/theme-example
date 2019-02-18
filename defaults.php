@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Custom Cloud';
+		return 'Custom Cloud - Custom Claim';
 	}
 
 	/**
@@ -89,7 +89,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'Custom Cloud';
+		return '<b>Custom</b> Cloud';
 	}
 
 	/**
@@ -113,7 +113,7 @@ class OC_Theme {
 	 * @return string logo claim
 	 */
 	public function getLogoClaim() {
-		return '';
+		return '<a href="https://example.com">Custom Claim</a>';
 	}
 
 	public function getPrivacyPolicyUrl() {
