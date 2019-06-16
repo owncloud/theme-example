@@ -82,4 +82,29 @@ button.primary:focus,
 #header .logo-icon {
 	background-image: url('../img/logo-icon.svg');
 	height: 34px;
+	line-height: initial;
+}
+#owncloud {
+	padding: 3px;
+}
+
+/* show Claim */
+#body-user #logo-claim  {
+	display: initial !important;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 17px;
+	padding-left: 170px;
+	height: 45px;
+}
+#body-user #logo-claim a {
+	color: #fff;
+}
+/* hide on small screens */
+@media only screen and (max-width: 767px) {
+	#body-user #logo-claim  {
+		display: none !important;
+	}
 }
