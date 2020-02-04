@@ -25,10 +25,16 @@
 	background-color: #745bca;
 }
 
-/* log in screen background color */
+/* log in screen background color and image */
 /* gradient of the header color and a brighter shade */
 /* can also be a flat color or an image */
 #body-login {
+	/* Login background image */
+	background-image: url("../img/background.jpg") !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* End of using background image */
 	background: #745bca; /* Old browsers */
 	background: -moz-linear-gradient(top, #947bea 0%, #745bca 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#947bea), color-stop(100%,#745bca)); /* Chrome,Safari4+ */
