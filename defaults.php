@@ -142,7 +142,7 @@ class OC_Theme {
 	 */
 	public function getShortFooter() {
 		$l10n = $this->getL10n();
-		$footer = '© 2018 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$footer = '© '.date("Y").' <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
 		if ($this->getImprintUrl() !== '') {
 			$footer .= '<span class="nowrap"> | <a href="' . $this->getImprintUrl() . '" target="_blank">' . $l10n->t('Imprint') . '</a></span>';
@@ -160,7 +160,7 @@ class OC_Theme {
 	 */
 	public function getLongFooter() {
 		$l10n = $this->getL10n();
-		$footer = '© 2018 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$footer = '© '.date("Y").' <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
 		if ($this->getImprintUrl() !== '') {
 			$footer .= '<span class="nowrap"> | <a href="' . $this->getImprintUrl() . '" target="_blank">' . $l10n->t('Imprint') . '</a></span>';
