@@ -23,7 +23,7 @@ Since files in the theme must be changeable, it has not been signed by us. There
 
 ```
 'integrity.ignore.missing.app.signature' => [
-      theme-example,
+      'theme-example',
  ],
 ```
 
