@@ -2,7 +2,7 @@
 
 ### Use the theme-example App
 
-To use the `theme-example` app, clone or <a href="https://github.com/owncloud/theme-example/archive/refs/heads/master.zip">download</a> this repository to the `owncloud\apps` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-example`.
+To use the `theme-example` app, clone or [download](https://github.com/owncloud/theme-example/archive/refs/heads/master.zip) this repository to the `owncloud\apps` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-example`.
 
 When you _download_ this repository the extracted folder name will be `theme-example-master`. You must change the folder name to `theme-example` to get the theme working out of the box.
 
