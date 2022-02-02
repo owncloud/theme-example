@@ -45,6 +45,21 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#947bea', endColorstr='#745bca',GradientType=0 ); /* IE6-9 */
 }
 
+/* >= ownCloud 10.8 - login button */
+/* styling of the login button which was introduced with ownCloud 10.8 */
+#alternative-logins li a.button, html #body-login input[type="submit"], html #body-login button[type="submit"] {
+  background-color: #745bca;
+  color: #fff; /* color of the text */
+  border: 1px solid #fff;
+}
+
+/* style for the hovered state of the button */
+#alternative-logins li a.button:hover, html #body-login input[type="submit"]:hover, html #body-login button[type="submit"]:hover {
+	background-color: #947bea;
+	color: #fff; /* color of the text */
+  border: 1px solid #fff;
+}
+
 /* primary action button, use sparingly */
 /* header color as border, brighter shade again, here as background */
 .primary,
