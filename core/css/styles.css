@@ -52,12 +52,23 @@
   color: #fff; /* color of the text */
   border: 1px solid #fff;
 }
-
 /* style for the hovered state of the button */
 #alternative-logins li a.button:hover, html #body-login input[type="submit"]:hover, html #body-login button[type="submit"]:hover {
 	background-color: #947bea;
 	color: #fff; /* color of the text */
   border: 1px solid #fff;
+}
+
+/* style legal and copyright text */
+/* styling of the info text of the login page on the button. */
+/* the color of the p.info part is also the color of the text above the credential fields (used by ownCloud >= 10.8) */
+/* also the color of error messages will be changed to the provided value */
+#body-login p.info, #body-login .warning, #body-login .update, #body-login .error, #body-login #showAdvanced {
+  color: #fff;
+}
+/* legal and copyright text (Link) */
+#body-login p.info a, #body-login .update a, #body-login form fieldset legend, #body-login #datadirContent label {
+  color: #fff;
 }
 
 /* primary action button, use sparingly */
