@@ -41,7 +41,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getiOSClientUrl() {
-		return 'https://itunes.apple.com/us/app/owncloud/id543672169?mt=8';
+		return 'https://apps.apple.com/us/app/id1359583808';
 	}
 
 	/**
@@ -49,7 +49,7 @@ class OC_Theme {
 	 * @return string AppId
 	 */
 	public function getiTunesAppId() {
-		return '543672169';
+		return '1359583808';
 	}
 
 	/**
@@ -123,7 +123,7 @@ class OC_Theme {
 			return '';
 		}
 	}
-	
+
 	public function getImprintUrl() {
 		try {
 			return \OC::$server->getConfig()->getAppValue('core', 'legal.imprint_url', '');
@@ -135,7 +135,7 @@ class OC_Theme {
 	public function getL10n() {
 		return \OC::$server->getL10N('core');
 	}
-	
+
 	/**
 	 * Returns short version of the footer
 	 * @return string short footer
