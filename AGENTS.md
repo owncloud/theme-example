@@ -1,4 +1,4 @@
-# agents.md — theme-example
+# AGENTS.md — theme-example
 
 ## Repository Overview
 
